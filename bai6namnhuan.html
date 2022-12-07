@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>namnhuan</title>
+</head>
+<body>
+<script>
+    let year = prompt("ban hay nhap so nam: ")
+    // console.log(year)
+    // if (year % 4 == 0){
+    //     if (year % 100 == 0){
+    //         if(year % 400 == 0){
+    //             alert("la nam nhuan")
+    //
+    //         }else{
+    //             alert('k phai nam nhuan')
+    //         }
+    //     }else{
+    //         alert("la nam nhuan")
+    //     }
+    //
+    //
+    // }else{
+    //     alert("k phai nam nhuan")
+    // }
+    // let  isLapYear = false;
+    //
+    //  if (year % 4 == 0) {
+    //      if (year % 100 == 0) {
+    //          if (year % 400 ==0){
+    //              isLapYear = true
+    //
+    //          }else {
+    //              isLapYear = true;
+    //          }
+    //      }else {
+    //
+    //      }
+    //  }else
+         // toan tu 3 ngoi
+         let mod4 = year % 4 == 0;
+         let mod100 = year % 100 == 0;
+         let mod400 = year % 400 == 0;
+     mod4?(mod100?(mod400? isLeapYear=true:isLeapYear=false):isLeapYear=true):isLeapYear=false;
+     if (isLeapYear) {
+         alert(year + " is leap year");
+     }else {
+         alert(' is not a leap year')
+     }
+
+
+</script>
+
+</body>
+</html>
